@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mercado</title>
+
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="bootstrap-theme.min.css" />
+<link href="meuestilo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="mercado.js"></script>
+<script type="text/javascript" src="txtJs.js"></script>
+
+</head>
+
+<body >
+
+<div class="container-fluid">
+
+<div class="col-md-3">
+</div>
+<div class="col-md-6">
+
+<form name="formercado" class="form-horizontal" onsubmit="return validaCampos()" action="" method="post">
+    <fieldset>
+    
+    <legend>Inclusão de Mercadoria</legend>
+    
+        <div class="control-group">
+          <label class="control-label" for="cd_produtot">Codigo do Produto</label>
+          <div class="controls">
+            <input name="cd_produto" class="input-xlarge" id="cd_produto" type="number" placeholder="codigo do produto">
+          </div>
+        </div>
+    
+        <div class="control-group">
+          <label class="control-label" for="tp_mercadoria">Tipo de Mercadoria</label>
+          <div class="controls">
+            <select name="tp_mercadoria" class="input-xlarge" id="tp_mercadoria">
+              <option value="0" selected="selected">Selecione</option>
+              <option value="1">Mercearia</option>
+              <option value="2">Padaria</option>
+              
+            </select>
+          </div>
+        </div>
+    
+        <div class="control-group">
+          <label class="control-label" for="nm_mercadoria">Nome do Produto</label>
+          <div class="controls">
+            <input name="nm_mercadoria" class="input-xlarge" id="nm_mercadoria" type="text" placeholder="ex: maça, uva ...">
+            
+          </div>
+        </div>
+    
+    
+    <div class="control-group">
+      <label class="control-label" for="">Quantidade</label>
+      <div class="controls">
+        <input type="number" name="qt_mercadoria" id="qt_mercadoria" class="input-group" placeholder="0">
+        
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="vl_mercadoria_unit">Valor do Produto</label>
+      <div class="controls">
+        <input name="vl_mercadoria_unit" class="input-xlarge" id="vl_mercadoria_unit" type="number" placeholder="0,00">
+        
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="radios">Tipo de Negócio</label>
+      <div class="controls">
+        
+        <select name="tp_negocio" id="select">
+        	<option value="">Selecione o Tipo do Negócio</option>
+            <option value="comprar" name="comprar">Comprar</option>
+            <option value="vender" name="vender">Vender</option>
+        </select> 
+        
+      </div>
+    </div>
+    
+    
+    <div class="control-group">
+      <label class="control-label" for="button1id">Incluir ?</label>
+      <div class="controls">
+        <button name="buttonOk" class="btn btn-success" id="submit" type="submit" onclick="" value="submit">OK</button>
+        <button name="buttonSair" class="btn btn-danger" id="sair">Sair</button>
+      </div>
+    </div>
+    
+    </fieldset>
+</form>
+
+</div>
+<div class="col-md-3">
+</div>
+
+</div>
+
+</body>
+</html>
